@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% adjust the page margins
+\usepackage[scale=0.88]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Maria}
+\familyname{Barkovskaya}
+\title{Curriculum Vitae}
+\email{barkovskaya.maria@mail.ru}
+\social[github]{https://github.com/mmmmarryyy}
+\extrainfo{\textit{some names in CV are referal to github projects}}
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace{-12mm}
+\section{Education}
+\cventry{2021--nowadays}{The Faculty of Mathematics and Computer Science, Modern Software Engineering}{Saint-Petersburg State University}{Saint-Petersburg, Russia}
+{a first-year student now}{}
+
+\section{Software Development Experience}
+
+\cventry{02.2022--nowadays}{Telegram Bot}{}{\textit{\textbf{Python}}}{}{}
+\cventry{11.2021--nowadays}{Sport Management System}{a system of organization for sports competitions in one of the cyclic sports: running, cross-country skiing, swimming, cycling, orienteering, etc. (work in team of 3 people)}{\textit{\textbf{Kotlin}}}{}{}
+\cventry{12.2021}{\href{https://github.com/mmmmarryyy/BMP-editor}{BMP Editor}}{BMP format image editor for cropping and rotating images}{\textit{\textbf{C}}}{}{}
+\cventry{10.2021--11.2021}{Data Visualization}{Сonsole App for drawing common types of diagrams (pie charts, histograms, scatterplots, etc.), the program draws a diagram in a graphical window and saves the result to a file}{\textit{\textbf{Kotlin}}}{}{}
+\cventry{10.2021}{\href{https://github.com/mmmmarryyy/KV-DataBase}{Key-Value DataBase}}{A console interface to the database that supports operations for searching, inserting and deleting text values by their corresponding text keys}{\textit{\textbf{Kotlin}}}{}{}
+\cventry{09.2021}{Diff utility}{Сonsole app that compares two texts line by line and shows which lines need to be deleted/added in order to get one text from another one}{\textit{\textbf{Kotlin}}}{}{}
+
+
+\section{Technical Strengths}
+\cvlistitem{Advanced Git skills}
+\cvlistitem{Knowledge of Basic Algorithms and Data Structures}
+\cvlistitem{Basic Knowledge of OOP}
+
+
+\section{Soft skills}
+\cvlistitem{Team player. Able to easily find a common language with others}
+\cvlistitem{Excellent time management skills. Сontrol my time and observe work-life balance}
+\cvlistitem{Сonstant self-development. Сonstantly working on both technical skills and other areas of my life (hobbies, relationships, financial literacy, etc.)}
+
+\section{Languages}
+\cvline{Russian}{\small Native speaker}
+\cvline{English}{\small B1-B2 level}
+
+\end{document}
+
+%% end of file `template.tex'.
